@@ -7,7 +7,11 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "extract-i18n": "ng xi18n MyHomePage --i18n-format xlf --output-path src/i18n --i18n-locale en && ng run MyHomePage:xliffmerge",
+    "start-ja": "ng serve --configuration=ja",
+    "start-zh-Hans": "ng serve --configuration=zh-Hans",
+    "start-es": "ng serve --configuration=es"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +23,7 @@
     "@angular/platform-browser": "~9.1.6",
     "@angular/platform-browser-dynamic": "~9.1.6",
     "@angular/router": "~9.1.6",
+    "@ngx-i18nsupport/tooling": "^8.0.3",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
@@ -27,6 +32,7 @@
     "@angular-devkit/build-angular": "~0.901.5",
     "@angular/cli": "~9.1.5",
     "@angular/compiler-cli": "~9.1.6",
+    "@ngx-i18nsupport/ngx-i18nsupport": "^1.1.6",
     "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",

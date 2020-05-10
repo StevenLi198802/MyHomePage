@@ -60,6 +60,27 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ja": {
+              "aot": true,
+              "outputPath": "dist/MyHomePage-ja",
+              "i18nFile": "src/i18n/messages.ja.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ja"
+            },
+            "zh-Hans": {
+              "aot": true,
+              "outputPath": "dist/MyHomePage-zh-Hans",
+              "i18nFile": "src/i18n/messages.zh-Hans.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "zh-Hans"
+            },
+            "es": {
+              "aot": true,
+              "outputPath": "dist/MyHomePage-es",
+              "i18nFile": "src/i18n/messages.es.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "es"
             }
           }
         },
@@ -71,6 +92,15 @@
           "configurations": {
             "production": {
               "browserTarget": "MyHomePage:build:production"
+            },
+            "ja": {
+              "browserTarget": "MyHomePage:build:ja"
+            },
+            "zh-Hans": {
+              "browserTarget": "MyHomePage:build:zh-Hans"
+            },
+            "es": {
+              "browserTarget": "MyHomePage:build:es"
             }
           }
         },
@@ -121,8 +151,26 @@
               "devServerTarget": "MyHomePage:serve:production"
             }
           }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "xliffmergeOptions": {
+              "i18nFormat": "xlf",
+              "srcDir": "src/i18n",
+              "genDir": "src/i18n",
+              "defaultLanguage": "en",
+              "languages": [
+                "en",
+                "ja",
+                "zh-Hans",
+                "es"
+              ]
+            }
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "MyHomePage"
 }
