@@ -27,7 +27,10 @@ html, body {
 .carousel-caption h1 {
     font-size: 500%;
     text-transform: uppercase;
+    letter-spacing: 1rem;
     text-shadow: 1px 1px 15px #000;
+    animation-name: title;
+    animation-duration: 3s;
 }
 .carousel-caption h3 {
     font-size: 200%;
@@ -148,5 +151,13 @@ hr.light-100 {
     .social a {
         font-size: 2rem;
         padding: 0.7rem;
+    }
+}
+@keyframes title {
+    0% {
+        font-size: 50%;
+    }
+    50% {
+        font-size: 600% ;
     }
 }
