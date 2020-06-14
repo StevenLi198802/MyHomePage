@@ -24,15 +24,12 @@ html, body {
     transform: translateY(-50%);
 }
 .carousel-caption h1 {
-    font-size: 500%;
+    font-size: 300%;
     text-transform: uppercase;
-    letter-spacing: 1rem;
     text-shadow: 1px 1px 15px #000;
-    animation-name: title;
-    animation-duration: 3s;
 }
 .carousel-caption h3 {
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 500;
     text-shadow: 1px 1px 10px #000;
     padding-bottom: 1rem;
@@ -106,10 +103,10 @@ hr.light-100 {
         top: 45%;
     }
     .carousel-caption h1 {
-        font-size: 350%;
+        font-size: 175%;
     }
     .carousel-caption h3 {
-        font-size: 140%;
+        font-size: 70%;
         font-weight: 400;
         padding-bottom: 0.2rem;
     }
@@ -130,7 +127,7 @@ hr.light-100 {
         top: 40%;
     }
     .carousel-caption h1 {
-        font-size: 250%;
+        font-size: 125%;
     }
     .carousel-caption h3 {
         font-size: 110%;
@@ -150,13 +147,5 @@ hr.light-100 {
     .social a {
         font-size: 2rem;
         padding: 0.7rem;
-    }
-}
-@keyframes title {
-    0% {
-        font-size: 50%;
-    }
-    50% {
-        font-size: 600% ;
     }
 }
