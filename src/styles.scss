@@ -93,7 +93,13 @@ hr.light-100 {
 .tech-logo{
     height: 75px;
 }
-
+.slide::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: radial-gradient(circle at 100% 50%, #85e0c8, #e7e1a2); 
+    background-image: radial-gradient(circle at 100% 50%, rgb(123,224,213),rgb(145,203,133));
+}
 @media (max-width: 992px) {
     .social a {
         font-size: 4rem;
