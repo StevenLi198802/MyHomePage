@@ -8,3 +8,17 @@
 .team-member {
     border: none;
 }
+
+.team-icon{
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    padding: 15%;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+
+.team-icon:hover{
+    background-color: skyblue;
+}
