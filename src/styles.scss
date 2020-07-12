@@ -105,6 +105,16 @@ hr.light-100 {
         font-size: 4rem;
         padding: 2rem;
     }
+    .aboutus {
+        display:flex;
+        flex-flow: column;
+        .aboutus-pic {
+            order: 1;
+        }
+        .aboutus-desc {
+            order: 2;
+        }
+    }
 }
 @media (max-width: 768px) {
     .carousel-caption {
@@ -155,5 +165,5 @@ hr.light-100 {
     .social a {
         font-size: 2rem;
         padding: 0.7rem;
-    }
+    }   
 }
