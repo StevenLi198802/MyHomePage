@@ -8,6 +8,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { TeamComponent } from './pages/team/team.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ConnectComponent } from './pages/connect/connect.component';
+import { TechlogoComponent } from './pages/techlogo/techlogo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ConnectComponent } from './pages/connect/connect.component';
     ContactComponent,
     TeamComponent,
     AboutComponent,
-    ConnectComponent
+    ConnectComponent,
+    TechlogoComponent
   ],
   imports: [
     BrowserModule,
