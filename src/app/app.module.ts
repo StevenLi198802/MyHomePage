@@ -9,6 +9,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ConnectComponent } from './pages/connect/connect.component';
 import { TechlogoComponent } from './pages/techlogo/techlogo.component';
+import { CarouselComponent } from './pages/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TechlogoComponent } from './pages/techlogo/techlogo.component';
     TeamComponent,
     AboutComponent,
     ConnectComponent,
-    TechlogoComponent
+    TechlogoComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
